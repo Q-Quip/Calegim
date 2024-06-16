@@ -1,0 +1,43 @@
+@import '/src/styles/variables';
+
+@mixin containerButton {
+    max-width: fit-content;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 1px solid $black;
+    transition: background-color 0.3s linear;
+    img {
+        margin-left: 30px;
+    }
+}
+
+.btnInherit {
+    @include containerButton;
+    background-color: inherit;
+    color: $black;
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+.btnBlack {
+    @include containerButton;
+    background-color: $black;
+    color: $white;
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+}
+
+.btnWhite  {
+    @include containerButton;
+    background-color: $white;
+    color: $black;
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+

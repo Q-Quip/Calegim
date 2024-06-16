@@ -1,0 +1,70 @@
+@import '/src/styles/variables';
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.Block {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.bg {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 9;
+
+    text-align: center;
+    padding: 100px 200px;
+    
+}
+
+.microBlocks {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    div {
+        background-color: $white;
+        padding: 20px 15px;
+        h4 {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+.citation {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.name {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.underName {
+    color: $dark-grey;
+}

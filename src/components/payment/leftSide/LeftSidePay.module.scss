@@ -1,0 +1,19 @@
+@import '/src/styles/variables';
+
+.container {
+    height: 100vh;
+    padding: 55px 44px 0 240px;
+}
+
+.container {
+    footer {
+        padding: 14px 0;
+        border-top: 1px solid $dark-grey;
+    }
+}
+.footNavigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:1.5em;
+}

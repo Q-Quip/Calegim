@@ -1,0 +1,123 @@
+@import '/src/styles/variables';
+
+
+
+.blure {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000004d;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+
+}
+.blure.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 28%;
+    background-color: $light-grey;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    transform: translateX(0%);
+    transition: transform .5s ease-in-out, visibility 0.5s ease-in-out;
+    visibility: visible;
+    
+}
+
+.bar.hidden {
+    transform: translateX(100%);
+    visibility: hidden;
+}
+
+.title {
+    padding: 18px 30px;
+    border-bottom: 1px solid #e7e7e7;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+        font-size: 24px;
+        font-weight: 900;
+    }
+}
+
+.logAccount {
+    padding: 18px 30px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: $white;
+    text-align: center;
+    span {
+        border-bottom: 1px solid $black;
+    }
+}
+
+
+
+.cards {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 18px 30px;
+   
+    overflow-y: auto;
+}
+
+.cards::-webkit-scrollbar {
+    width: 0;
+}
+
+.buyBtn {
+    display: inline-block;
+    text-align: center; 
+    padding: 20px 30px;
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    span:nth-child(2) {
+        font-weight: 900;
+        font-size: 17px;
+        text-transform:  uppercase;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 15px;
+        color: $white;
+        background-color: $black;  
+        border-radius: 28px;
+        padding: 16px 20px; 
+
+       text-transform:  uppercase;
+       font-weight: 500;
+    }
+}
+
+
+
+.btn {
+    border: 1px solid $black;
+    transition: all .3s ease-in-out;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    span {
+        margin-left: 10px;
+    } 
+}
+
+.btn:hover {
+    background-color: $white;
+    color: $black;
+}

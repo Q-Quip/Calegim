@@ -1,0 +1,39 @@
+@import '/src/styles/variables';
+
+.container {
+    background-color: $black;
+    color: $white;
+    padding: $contain-horizontal;
+}
+
+.infoLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftBar {
+    a {
+        text-decoration: underline;
+    }
+}
+
+.rightBar {
+    display: flex;
+
+    div {
+        padding: 10px 15px;
+    }
+
+    div:nth-child(1):hover {
+        color: #dbd1cc;
+    }
+
+    div:nth-child(2) {
+        background-color: rgb(239, 234, 231);
+        color: $black;
+    }
+    div:nth-child(2):hover {
+        background-color: #dbd1cc;
+    }
+}

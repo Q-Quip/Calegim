@@ -1,0 +1,41 @@
+@import '/src/styles/variables';
+
+.container {
+    background-color: $light-grey;
+    padding: 55px 240px 0 44px;
+    height: 100%;
+    border-left: 1px solid $dark-grey;
+}
+
+.discount {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1;
+    padding: 25px 0 25px 0;
+    input, button {
+        border-radius: 5px;
+    }
+}
+
+.discount {
+
+    input {
+        border: 1px solid $dark-grey;
+        padding: 13px 11px;
+        transition: all 0.3s ease-out;
+    }
+    input:focus {
+        border:1px solid #231d1d;
+        box-shadow: 0 0 0 1px #231d1d;
+    }
+    button {
+        padding: 13px 23px;
+        margin-left:14px;
+        margin-bottom:10px;
+        background-color: $dark-grey;
+        color: $white;
+        height: 52px;
+    }
+
+    border-bottom: 1px solid $dark-grey;
+}

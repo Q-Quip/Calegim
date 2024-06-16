@@ -1,0 +1,31 @@
+@import '/src/styles/variables';
+
+
+.container {
+    background-color: $light-grey;
+    padding: $contain-vertical;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    padding: $contain-horizontal;
+    justify-content: center;
+    li {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        text-align: center;
+        align-items: center;
+
+        p{
+            color: $dark-grey;
+        }
+    }
+}
+
+.print {
+    width: 117px;
+    margin-bottom: 0.9rem;
+}

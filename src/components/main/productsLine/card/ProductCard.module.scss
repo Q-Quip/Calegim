@@ -1,0 +1,41 @@
+@import '/src/styles/variables';
+
+.cardBlock {
+    height: 100%;
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    transition: transform .3s ease-in-out;
+}
+
+.unHovered {
+    height: 100%;
+}
+
+.blockBg {
+    background-color: $light-grey;
+    margin-bottom: .9375rem;
+}
+
+.cardImg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.cardText {
+    height: 100px;
+    h3 {
+        font-size: 17px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+.textDsc {
+    color: #908e8e;
+}
+
+.textPrice {
+    text-transform: uppercase;
+}

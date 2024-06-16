@@ -1,0 +1,48 @@
+@import '/src/styles/variables';
+
+.inputContainer {
+
+    position: relative;
+
+    input {
+        width: 100%;
+        border: 1px solid $dark-grey;
+        padding: 13px 11px;
+        transition: all 0.3s ease-out;
+        border-radius: 5px;
+    }
+
+    input:focus {
+        border:1px solid #231d1d;
+        box-shadow: 0 0 0 1px #231d1d;
+    }
+
+    span {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out, visibility .2s ease-in-out; 
+
+        padding-left: 11px;
+        color: #737373;
+    }
+}
+
+.inputContainer.active {
+     span {
+        visibility: visible;
+        opacity: 1;
+     }
+     input {
+        padding: 21px 29px 5px 11px; 
+     }
+}
+
+.errorInput {
+    border-color: #b00100;
+    box-shadow: 0 0 1px 1px #b00100;
+}
+
+.errorLine {
+    color: #b00100;
+}

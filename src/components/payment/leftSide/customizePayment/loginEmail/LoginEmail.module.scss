@@ -1,0 +1,54 @@
+@import '/src/styles/variables';
+
+.logOut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        color: #545454;
+        span {
+            color: $black;
+        }
+    }
+    margin-bottom: 15px;
+}
+
+.emailInput {
+    width: 100%;
+    border: 1px solid $dark-grey;
+    padding: 13px 11px;
+    transition: all 0.3s ease-out;
+    border-radius: 5px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+}
+
+.emailInput:focus {
+    border:1px solid #231d1d;
+    box-shadow: 0 0 0 1px #231d1d;
+}
+
+.emailNews {
+    display: flex;
+    align-items: center;
+    input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        width: 20px;
+        height: 20px;
+        border: 1px solid $dark-grey;
+        border-radius: 4px;
+        margin: 0 6px 0 0 ;
+        cursor: pointer;  
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: #231d1d;
+    }
+}

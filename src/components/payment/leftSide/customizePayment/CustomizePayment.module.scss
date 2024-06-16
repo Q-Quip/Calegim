@@ -1,0 +1,35 @@
+@import '/src/styles/variables';
+
+.userForm {
+    position: relative;
+    padding-bottom: 4em;
+}
+
+.mainContainer {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sendCardData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 21px;
+}   
+.returnHome {
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+} 
+.shipping {
+    background-color: $black;
+    color: $white;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 1.4em 1.7em;
+    
+}

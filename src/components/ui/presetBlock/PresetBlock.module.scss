@@ -1,0 +1,46 @@
+@import '/src/styles/variables';
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 100px 80px;
+    border-bottom: 1px solid $light-grey;
+}
+
+.bgImgLeft {
+    width: 100%;
+}
+
+.bgImgRight {
+    width: 100%;
+    order: 2;
+}
+
+.textBlock {
+    padding: 0 60px 0 160px;
+    margin: auto;
+}
+
+.imgBlock {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding-bottom: 30px;
+    gap: 15px;
+}
+.imgBlock {
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img {
+            border-radius: 50%;
+            background-color: $light-grey;
+            padding: 10px;
+            height: 60px;
+        }
+        p {
+            margin-left: 15px;
+        }
+    }
+}

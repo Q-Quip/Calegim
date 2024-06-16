@@ -1,0 +1,36 @@
+@import '/src/styles/variables';
+
+.btnRight {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+
+    border-radius: 50%;
+    border: 1px solid $black;
+    
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btnLeft {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+
+    border-radius: 50%;
+    border: 1px solid $black;
+    
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

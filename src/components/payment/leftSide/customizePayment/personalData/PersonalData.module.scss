@@ -1,0 +1,18 @@
+@import '/src/styles/variables';
+
+.title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.twoInputs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.threeInputs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}

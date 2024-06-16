@@ -1,0 +1,33 @@
+@import '/src/styles/variables';
+
+.titleSize {
+    line-height: 0.9;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.textMargin {
+    margin-bottom: 20px; 
+}
+
+.btnLine {
+    background-color: inherit;
+    border-bottom: 1px solid $black;
+    transition: color 0.7s ease, border-bottom 0.7s ease;
+    
+    img {
+        filter: brightness(1) invert(0);
+        margin-left: 0.7rem;
+        transition: transform 0.3s ease, filter 0.7s ease;
+    }
+
+    &:hover {
+        color: $dark-grey;
+        border-bottom: 1px solid $dark-grey;
+        img {
+            filter: brightness(1) invert(0.7);
+            transform: rotate(45deg);
+        }
+    }
+}

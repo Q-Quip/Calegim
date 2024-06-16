@@ -1,0 +1,48 @@
+@import '/src/styles/variables';
+
+.containerV {
+    padding: $contain-vertical;
+}
+
+.containerH {
+    padding: $contain-horizontal;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+} 
+
+.products {
+    position: relative;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    overflow: hidden;
+    display: flex; 
+}
+
+
+.lineProcent {
+    height: 2px;
+    background-color: $light-grey;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $black;
+    width: 30%; 
+    height: 100%;
+    transition: width .3s ease-in-out;
+}
+

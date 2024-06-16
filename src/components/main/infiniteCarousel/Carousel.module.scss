@@ -1,0 +1,31 @@
+@import '/src/styles/variables';
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    display: flex;
+    padding: 10px 0px;
+    overflow: hidden;
+    border-bottom: 2px solid $light-grey;
+}
+
+.logosSlide {
+    display: flex;
+    white-space: nowrap;
+    animation: 35s slide infinite linear;
+}
+
+.logos:hover .logosSlide {
+    animation-play-state: paused;
+}
+
+.print {
+    max-height: 72px;
+    max-width: 180px;
+}

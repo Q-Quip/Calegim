@@ -1,0 +1,28 @@
+@import '/src/styles/variables';
+
+.learnAbout {
+    border-top: 1px solid rgba(35, 29, 29,.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        background-color: inherit;
+        transition: color .7s ease;
+    }
+    padding: 1.3rem 0;
+    img {
+        filter: brightness(1) invert(0);
+        margin-left: 0.7rem;
+        transition: transform 0.3s ease, filter 0.7s ease;
+    }
+}
+
+.learnAbout:hover {
+    button {
+        color: $dark-grey;
+    }
+    img {
+        filter: brightness(1) invert(0.7);
+        transform: rotate(45deg);
+    }
+}

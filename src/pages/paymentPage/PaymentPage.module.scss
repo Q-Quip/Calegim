@@ -1,0 +1,6 @@
+@import '/src/styles/variables';
+
+.pageDivision {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}

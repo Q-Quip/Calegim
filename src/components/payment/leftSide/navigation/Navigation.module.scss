@@ -1,0 +1,17 @@
+@import '/src/styles/variables';
+
+.mainLogo {
+    height: 40px;
+}
+
+.navigationList {
+    display: flex;
+    margin: 1em 0 1em 0;
+    li {
+        display: flex;
+        align-items: center;
+    }
+}
+.arrowIcon {
+    margin: 0 7px;
+}
